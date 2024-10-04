@@ -1,0 +1,9 @@
+ /* note index */
+
+ .note-content {
+    transition: margin-left 0.3s ease;
+}
+
+.content-shifted {
+    margin-left: 200px; 
+}

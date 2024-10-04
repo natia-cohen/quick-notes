@@ -1,0 +1,16 @@
+.note-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    gap: 10px;
+    grid-auto-flow: dense; 
+
+}
+.note-list.pinned {
+    margin-bottom: 20px; 
+}
+
+.separator {
+    border-bottom: 1px solid #e0e0e0; 
+    margin: 20px 0;
+}
+

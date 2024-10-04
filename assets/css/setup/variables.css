@@ -1,0 +1,20 @@
+:root {
+    --main-bg-color: #fff;
+    --main-border: #f1f3f4;
+    --mail-send-btn-bg: #0b57d0;
+    --mail-bg-color: #f6f8fc;
+    --mail-compose-bg: #c2e7ff;
+    --mail-search-bg: #eaf1fb;
+    --mail-label-active: #d3e3fd;
+    --mail-label-hover: #eeeeee;
+    --mail-readed: #f2f6fc;
+    --mail-scroll: #c4c7c5;
+    --mail-main-hover: rgba(60, 64, 67, .08);
+    --mail-label-text: #303030;
+    --mail-label-text-bold: #202124;
+
+    --keep-label-active: #feefc3;
+    --keep-label-hover: #f1f3f4;
+    --keep-bg-coral: #d69f9f;
+    --keep-bg-light-green: #7dc2b6;
+}

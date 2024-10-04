@@ -1,0 +1,45 @@
+.email-details {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.email-details h3 {
+    margin-block-start: 20px;
+}
+
+.email-details p {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+.email-details p:last-child {
+    margin-block-start: 20px;
+    padding: 20px;
+}
+
+.email-details-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.email-details-actions button {
+    width: 25px;
+    border: none;
+    border-radius: 40px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.email-details-actions .icon {
+    /* width: 20px; */
+    /* padding: 10px; */
+}
+
+
+.email-details-actions button:hover {
+    background-color: rgba(216, 216, 216, 0.705);
+}

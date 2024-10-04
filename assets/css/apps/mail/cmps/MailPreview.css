@@ -1,0 +1,56 @@
+.email-preview-container {
+    position: relative;
+}
+
+.email-preview-container:hover .email-actions {
+    display: block;
+}
+
+.mail-preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+.mail-preview p {
+    margin: 0;
+}
+
+.mail-preview .mail-prev-details {
+    display: flex;
+    padding-inline-end: 10px;
+    gap: 30px;
+}
+
+.mail-preview p:last-child {
+    justify-self: end;
+    padding-inline-end: 20%;
+}
+
+.email-actions {
+    display: none;
+    position: absolute;
+    right: 0;
+    gap: 3px;
+    bottom: -3px;
+}
+
+.email-actions button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.email-actions .icon {
+    width: 20px;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.email-actions .icon:hover {
+    background-color: rgba(216, 216, 216, 0.705);
+}
+
+.mail-preview.un-read {
+    font-weight: 600;
+}

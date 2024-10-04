@@ -1,0 +1,54 @@
+.side-nav {
+    position: fixed;
+    top: 26.5%;
+    left: 0;
+  
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000; 
+}
+
+.side-nav.open {
+    transform: translateX(0);
+    position: absolute;
+    top: 26.5%;
+    left: 0;
+  
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.2s ease; 
+    border-radius: 12px; 
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #feefc3; 
+    background-clip: padding-box;
+}
+
+.material-icons {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .side-nav {
+        width: 200px; 
+    }
+    
+    .note-content {
+        margin-left: 200px;
+    }
+}

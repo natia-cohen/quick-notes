@@ -1,0 +1,85 @@
+@media (max-width: 450px) {
+
+    .emails-container {
+        grid-template-columns: minmax(40px, 100px) minmax(400px, 1fr);
+    }
+
+    .email-search-container {
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 10px;
+    }
+
+    .radio-inputs {
+        flex-wrap: nowrap;
+        width: 320px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-main-icon {
+        display: none;
+        margin-inline-start: 40px;
+    }
+
+    .radio-inputs {
+        max-width: 339px;
+    }
+
+    .radio-inputs .radio {
+        max-width: 104px;
+    }
+
+    .radio-inputs .radio .name {
+        max-width: 150px;
+    }
+
+    .side-menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100dvh;
+        background-color: rgba(241, 241, 241, 0.9);
+        border-inline-end: 1px solid #838383;
+        min-width: 200px;
+        z-index: 10;
+        padding: 10px;
+        transform: translateX(-100%);
+    }
+
+    .side-menu-container.active-menu {
+        box-shadow: 14px 9px 20px 8px rgb(0 0 0 / 25%);
+        transform: translateX(0);
+    }
+
+    .main-screen {
+        display: block;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        top: 0;
+        width: 500px;
+        height: 100vh;
+        background-color: rgba(212, 212, 212, 0.336);
+    }
+
+    .compose-modal {
+        min-width: 350px;
+    }
+
+    table {
+        min-width: 323px;
+    }
+
+    .email-details {
+        min-width: 300px;
+    }
+
+    .email-actions {
+        display: block;
+    }
+
+}

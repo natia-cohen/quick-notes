@@ -1,0 +1,113 @@
+.email-search-container {
+    display: grid;
+    grid-template-columns: minmax(300px, 400px) minmax(300px, 1fr);
+    gap: 5px;
+    grid-column: 2/-1;
+}
+
+.email-search-input {
+    width: 200px;
+    border: none;
+    background: var(--mail-search-bg);
+    border-radius: 24px;
+
+    background-image: url('/assets/img/mail-icons/search.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px;
+    padding: 12px 20px 12px 40px;
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--main-bg-color);
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    gap: 5px;
+    font-size: 14px;
+    grid-column: 1/-1;
+}
+
+.radio-inputs .radio {
+    text-align: center;
+    padding-inline-start: 5px;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    min-width: 200px;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    padding: .5rem 0;
+}
+
+.radio-inputs .radio input:checked+.name {
+    color: var(--mail-send-btn-bg);
+    border-bottom: 2px solid var(--mail-send-btn-bg);
+    font-weight: 600;
+}
+
+/* ~~~sorting container~~~~~ */
+
+.sorting-container {
+    display: flex;
+    gap: 5px;
+    grid-column: 2/-1;
+}
+
+.sorting-container .label {
+    text-align: center;
+    padding-inline-start: 5px;
+}
+
+.sorting-container input {
+    display: none;
+
+}
+
+.sorting-container .sort-by-subject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    background-color: var(--mail-label-hover);
+    cursor: pointer;
+    padding: 8px 4px;
+    border-radius: 30px;
+}
+
+.sorting-container .sort-by-sentAt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    background-color: var(--mail-label-hover);
+    cursor: pointer;
+    padding: 8px 4px;
+    border-radius: 30px;
+}
+
+.sorting-container .arrow {
+    scale: 1.2;
+    transition: .2s;
+    margin-right: 4px;
+}
+
+.sorting-container input:checked+.sort-by-subject,
+.sorting-container input:checked+.sort-by-sentAt {
+    background-color: var(--mail-label-active);
+    font-weight: 600;
+}
+
+
+.sorting-container input:checked+.sort-by-subject .arrow,
+.sorting-container input:checked+.sort-by-sentAt .arrow {
+    transform: rotate(-180deg);
+
+}

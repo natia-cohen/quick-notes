@@ -1,0 +1,33 @@
+.app-header {
+    background: linear-gradient(100deg, #ffffff, #cdb1da);
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: .5em;
+}
+
+nav a:active {
+    color: purple;
+}
+
+nav a.active {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+.app-logo {
+    padding-inline-start: 10px;
+    width: 60px;
+}

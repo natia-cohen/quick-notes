@@ -1,0 +1,93 @@
+ .note-add-txt {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ .note-add {
+     background-color: white;
+     border-radius: 8px;
+     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+     padding: 16px;
+     margin: 16px;
+     max-width: 600px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .note-title {
+     border: none;
+     border-bottom: 1px solid #e0e0e0;
+     margin-bottom: 8px;
+     font-size: 16px;
+     outline: none;
+ }
+
+
+
+ .save-note-button {
+     align-self: flex-end;
+     background-color: #6200ea;
+     color: white;
+     border: none;
+     padding: 8px 16px;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 14px;
+ }
+
+ .note-add .items-container {
+     display: flex;
+     gap: 5px;
+     justify-content: center;
+
+ }
+
+ .note-add .item {
+     border: whitesmoke 2px solid;
+     padding: 3px;
+     margin: 3px;
+     min-height: 30px;
+     min-width: 30px;
+     cursor: pointer;
+     display: grid;
+     place-items: center;
+     border-radius: 50%;
+     overflow: hidden;
+     transition: transform 0.2s ease;
+ }
+
+ .note-add .item:hover {
+     transform: scale(1.1);
+ }
+
+ .note-add .item.selected {
+     border: 2px solid purple !important;
+ }
+
+ .button-group {
+    display: flex; 
+    align-items: center; 
+}
+
+
+.color-picker-button,
+.note-list-button,
+.note-txt-button {
+    padding: 12px 16px; 
+    border: none; 
+    color: #0c0a0a; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease; 
+    background-color: transparent; 
+    margin-right: 10px; 
+}
+
+
+.color-picker-button:hover,
+.note-list-button:hover,
+.note-txt-button:hover {
+    background-color: #f0f0f0; 
+}

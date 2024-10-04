@@ -1,0 +1,62 @@
+.side-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.compose-btn {
+    display: flex;
+    background-color: var(--mail-compose-bg);
+    border-radius: 24px;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    gap: 5px;
+    transition: .3s;
+}
+
+.compose-btn .icon {
+    width: 20px;
+}
+
+.compose-btn:hover {
+    box-shadow: 1px 2px 0 rgba(60, 64, 67, .3),
+        0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+.side-menu p {
+    display: flex;
+    padding: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-end: 5px;
+}
+
+.side-menu p:hover:not(.active-label) {
+    cursor: pointer;
+    padding: 10px;
+    background: var(--mail-label-hover);
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.side-menu p .icon {
+    width: 15px;
+    margin-inline-end: 10px;
+}
+
+.side-menu .unread-counter {
+    margin-inline-start: auto;
+}
+
+.active-label {
+    cursor: pointer;
+    background-color: var(--mail-label-active);
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}

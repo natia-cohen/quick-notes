@@ -1,0 +1,51 @@
+.note-preview {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.note-preview:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd; /* הוספת מסגרת בולטת */
+}
+
+.note-preview h3 {
+    margin: 0;
+}
+
+.note-preview p {
+    margin: 5px 0;
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+    width: 15ch;
+}
+
+.note-preview .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+
+.note-preview button.close-button, 
+.note-preview button.recycling-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+.note-preview button.close-button:hover, 
+.note-preview button.recycling-button:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 30%; 
+}
