@@ -132,33 +132,165 @@ function noteTrash() {
 
 
 //privet function 
-
 function _createNotes() {
-    let notes = storageService.loadFromStorage(NOTE_KEY) || []
+    let notes = storageService.loadFromStorage(NOTE_KEY) || [];
 
-    if (notes && notes.length) return
+    if (notes && notes.length) return;
 
-    for (let i = 0; i < 10; i++) {
-        const note = {
+    const sampleNotes = [
+        {
             id: utilService.makeId(),
             createdAt: utilService.getCurrentTime(),
             type: 'NoteTxt',
             isPinned: false,
             isRemoved: false,
-            style: {
-                backgroundColor: '#fff'
-            },
+            style: { backgroundColor: '#f28b82' }, // Red
             info: {
-                title: 'NoteTxt',
-                txt: 'Fullstack Me Baby!'
-
+                title: 'Groceries',
+                txt: 'Buy milk, eggs, and bread.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: true,
+            isRemoved: false,
+            style: { backgroundColor: '#fbbc04' }, // Orange
+            info: {
+                title: 'Meeting Notes',
+                txt: 'Discuss project timeline and milestones.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#fff475' }, // Yellow
+            info: {
+                title: 'To Do',
+                txt: 'Clean the house, water the plants.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#ccff90' }, // Light Green
+            info: {
+                title: 'Books to Read',
+                txt: 'The Great Gatsby, 1984, To Kill a Mockingbird.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#a7ffeb' }, // Light Cyan
+            info: {
+                title: 'Ideas',
+                txt: 'Start a blog about technology and coding.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#cbf0f8' }, // Light Blue
+            info: {
+                title: 'Workout Plan',
+                txt: 'Monday: Cardio, Tuesday: Strength, Wednesday: Yoga.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#d7aefb' }, // Purple
+            info: {
+                title: 'Vacation Packing List',
+                txt: 'Clothes, Passport, Camera, Chargers.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#fdcfe8' }, // Pink
+            info: {
+                title: 'Birthday Party',
+                txt: 'Order cake, send invitations, buy decorations.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#e6c9a8' }, // Brown
+            info: {
+                title: 'Home Renovation',
+                txt: 'Paint walls, replace flooring, buy new furniture.'
+            }
+        },
+        {
+            id: utilService.makeId(),
+            createdAt: utilService.getCurrentTime(),
+            type: 'NoteTxt',
+            isPinned: false,
+            isRemoved: false,
+            style: { backgroundColor: '#e8eaed' }, // Gray
+            info: {
+                title: 'Chores',
+                txt: 'Laundry, dishes, vacuum the living room.'
             }
         }
-        notes.push(note)
-    }
+    ]
+    notes.push(...sampleNotes);
 
-    storageService.saveToStorage(NOTE_KEY, notes)
+    storageService.saveToStorage(NOTE_KEY, notes);
 }
+
+
+// function _createNotes() {
+//     let notes = storageService.loadFromStorage(NOTE_KEY) || []
+
+//     if (notes && notes.length) return
+
+//     for (let i = 0; i < 10; i++) {
+//         const note = {
+//             id: utilService.makeId(),
+//             createdAt: utilService.getCurrentTime(),
+//             type: 'NoteTxt',
+//             isPinned: false,
+//             isRemoved: false,
+//             style: {
+//                 backgroundColor: '#fff'
+//             },
+//             info: {
+//                 title: 'NoteTxt',
+//                 txt: 'Fullstack Me Baby!'
+
+//             }
+//         }
+//         notes.push(note)
+//     }
+
+//     storageService.saveToStorage(NOTE_KEY, notes)
+// }
 
 
 function _setNextPrevNoteId(note) {
