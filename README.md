@@ -32,4 +32,6 @@ Since this project is a frontend-only application without a backend, data is man
 Include screenshots of your app here to showcase key features.
 
 ## Demo
-Check out the live demo: BookNote on GitHub Pages
+
+Check out the live demo: [BookNote on GitHub Pages](https://natiapa.github.io/BookNote/#/note)
+
