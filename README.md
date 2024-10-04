@@ -1,4 +1,4 @@
-BookNote
+BookNote:
 BookNote is a note management application inspired by apps like Google Keep. It allows users to create, edit, delete, and organize their notes efficiently. All data is managed locally using local storage.
 
 Features
