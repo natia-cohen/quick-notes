@@ -1,6 +1,7 @@
-# BookNote
 
-**BookNote** is a note management application inspired by apps like Google Keep. It allows users to create, edit, delete, and organize their notes efficiently. All data is managed locally using the browser's local storage.
+# QuickNotes
+
+**QuickNotes** is a note management application inspired by apps like Google Keep. It allows users to create, edit, delete, and organize their notes efficiently. All data is managed locally using the browser's local storage.
 
 ## Features
 
@@ -21,7 +22,7 @@
 To run the project on your local machine, follow these steps:
 
 ```
- git clone https://github.com/natiapa/BookNote.git
+ git clone https://github.com/natiapa/quick-notes.git
 ```
 After downloading, open the main HTML file in your browser to access the app.
 
@@ -33,5 +34,4 @@ Include screenshots of your app here to showcase key features.
 
 ## Demo
 
-Check out the live demo: [BookNote on GitHub Pages](https://natiapa.github.io/BookNote/#/note)
-
+Check out the live demo: [QuickNotes on GitHub Pages](https://natiapa.github.io/quick-notes/#/note)
